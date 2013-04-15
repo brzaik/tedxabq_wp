@@ -14,7 +14,8 @@
 						<?php foreach ($rss->get_items(0, $maxitems) as $item): ?>
 							<a class="video_thumb" href='<?php echo $item->get_permalink(); ?>'title='<?php echo 'Posted '.$item->get_date('j F Y | g:i a'); ?>'>
 								<img src="<?php echo $item->get_enclosure()->get_thumbnail(); ?>" />
-								<p><?php echo explode(': ', $item->get_title())[0]; ?></p>
+								<?php $concat_title = explode(': ', $item->get_title()); ?>
+								<p><?php echo $concat_title[0]; ?></p>
 							</a>
 						<?php endforeach; ?>
 					</div>
