@@ -310,7 +310,6 @@ HERO STRIPE
 		}
 
 		.slideshow {
-			border-right: solid 1px $white;
 			width: 658px;
 			float: left;
 		}
@@ -319,23 +318,42 @@ HERO STRIPE
 			float: right;
 			width: 340px;
 
-			.left-col {
-				border-right: solid 1px $white;
-				height: 336px;
+			a.video_thumb { 
+				display: block;
 				float: left;
 				width: 170px;
+				color: $white;
+				height: 168px;
+				position: relative;
+				border-left: solid 1px $white;
+				border-bottom: solid 1px $white;
 			}
-			.right-col {
-				height: 336px;
-				width: 170px;
-				float: right;
+			a.video_thumb > img {
+				width: 168px;
+				z-index: 1;
+				position: absolute;
+
+			}
+			a.video_thumb > p {
+				z-index: 2;
+				position: absolute;
+				bottom: 0px;
+				left: 0px;
+				background: $black;
+				font-size: 0.7em;
+				display: block;
+				padding: 4px 6px;
+				margin: 0px;
+				-moz-hyphens: none;
+  			-webkit-hyphens: none;
+  			hyphens: none;
 			}
 		}
 	}
 }
 .video-archives-stripe {
-	border: solid 1px $white;
-	border-width: 1px 1px 0px 1px;
+	//border: solid 1px $white;
+	//border-width: 1px 1px 0px 1px;
 	background: $white;
 
 	p {
@@ -353,15 +371,15 @@ HERO STRIPE
 
 	.left-col {
 		float: left;
-		width: 658px;
+		width: 828px; /* 658px; */
 	}
 	.right-col {
 		float: right;
-		width: 340px;
+		width: 170px;
 		background: $black;
 
 		.padding-cont {
-			padding: 8px 12px;
+			padding: 8px;
 		}
 	}
 }
@@ -959,6 +977,32 @@ SIDEBARS & ASIDES
 
 		}
 
+	}
+
+	.widget_search {
+		#s {
+			background: $gray-lightest;
+			border: solid 1px $gray-lighter;
+			padding: 6px 4px;
+		}
+		#searchsubmit {
+		}
+
+		::-webkit-input-placeholder {
+			color: $gray-light;
+		}
+
+		:-moz-placeholder { /* Firefox 18- */
+			color: $gray-light;
+		}
+
+		::-moz-placeholder {  /* Firefox 19+ */
+			color: $gray-light;
+		}
+
+		:-ms-input-placeholder {  
+			color: $gray-light;
+		}
 	}
 
 /*********************

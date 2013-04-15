@@ -6,12 +6,17 @@
 						<?php if ( function_exists( "easingsliderlite" ) ) { easingsliderlite(); } ?>
 					</div>
 					<div class="videos-cont wrap clearfix">
-						<div class="left-col">
-							Videos 1
-						</div>
-						<div class="right-col">
-							Videos 2
-						</div>
+						<?php include_once(ABSPATH.WPINC.'/feed.php');
+							$rss = fetch_feed('http://tedxtalks.ted.com/feed/magnify.rss/tedxabq');
+							$maxitems = $rss->get_item_quantity(4);
+						?>
+
+						<?php foreach ($rss->get_items(0, $maxitems) as $item): ?>
+							<a class="video_thumb" href='<?php echo $item->get_permalink(); ?>'title='<?php echo 'Posted '.$item->get_date('j F Y | g:i a'); ?>'>
+								<img src="<?php echo $item->get_enclosure()->get_thumbnail(); ?>" />
+								<p><?php echo explode(': ', $item->get_title())[0]; ?></p>
+							</a>
+						<?php endforeach; ?>
 					</div>
 				</div>
 			</div>
@@ -22,11 +27,7 @@
 				<div class="right-col">
 					<div class="padding-cont">
 						<p>
-							More videos from:
-							<span><a href="">2012</a></span>
-							<span><a href="">2011</a></span>
-							<span><a href="">2010</a></span>
-							<span><a href="">2009</a></span>
+							<a href="http://tedxtalks.ted.com/browse/talks-by-event/tedxabq">> View more videos</a>
 						</p>
 					</div>
 				</div>
