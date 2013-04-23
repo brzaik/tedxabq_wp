@@ -68,9 +68,24 @@ jQuery(document).ready(function($) {
 	
 	// add all your scripts here
 	
+    var pull        = $('#pull');
+        menu        = $(pull).parent().find('ul');
+        menuHeight  = menu.height();
+
+    $(pull).on('click', function(e) {
+        e.preventDefault();
+        menu.slideToggle("fast");
+    });
+
+    $(window).resize(function(){
+        var w = $(window).width();
+        if(w > 320 && menu.is(':hidden')) {
+            menu.removeAttr('style');
+        }
+    });
+
  
 }); /* end of as page load scripts */
-
 
 /*! A fix for the iOS orientationchange zoom bug.
  Script by @scottjehl, rebound by @wilto.

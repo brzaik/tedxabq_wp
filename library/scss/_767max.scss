@@ -1,0 +1,24 @@
+.main-menu-nav ul {
+  display: none;
+}
+.main-menu-nav a#pull {
+  display: block;
+  width: 100%;
+  position: relative;
+  border-left: solid 1px $white;
+  border-right: solid 1px $white;
+  color: $black;
+  font-weight: bold;
+  background: $gray-lighter;
+  padding: 4px 12px;
+}
+.main-menu-nav a#pull:after {
+  content:"";
+  background: url("../images/responsivenav_list.png") top right no-repeat;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  position: absolute;
+  right: 15px;
+  top: 10px;
+}

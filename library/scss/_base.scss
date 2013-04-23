@@ -154,7 +154,8 @@ h5, .h5 {
 	font-weight: bold;
 	letter-spacing: 0.05em;
 	color: lighten($gray-light, 6%);
-	padding-left: 35px;
+	padding-left: 4%;
+	padding-right: 4%;
 }
 .underlined-header {
 	border-bottom: solid 1px lighten($gray-light, 20%);
@@ -166,7 +167,9 @@ HEADER STYLES
 
 .header {}
 
-	#logo {}
+	#logo {
+		img { max-width: 100%; }
+	}
 
 /*********************
 NAVIGATION STYLES
@@ -300,7 +303,8 @@ HERO STRIPE
 
 .hero {
 	background: $black;
-	width: 100%;
+	width: 96%;
+	margin: 0 2%;
 
 	&.frontpage {
 		.hero-content {
@@ -309,14 +313,9 @@ HERO STRIPE
 			border-right: solid 1px $white;
 		}
 
-		.slideshow {
-			width: 658px;
-			float: left;
-		}
+		.slideshow { }
 
 		.videos-cont {
-			float: right;
-			width: 340px;
 
 			a.video_thumb { 
 				display: block;
@@ -369,19 +368,6 @@ HERO STRIPE
 		}
 	}
 
-	.left-col {
-		float: left;
-		width: 828px; /* 658px; */
-	}
-	.right-col {
-		float: right;
-		width: 170px;
-		background: $black;
-
-		.padding-cont {
-			padding: 8px;
-		}
-	}
 }
 
 
@@ -394,6 +380,10 @@ POSTS & CONTENT STYLES
 		background: $white;
 		padding-bottom: 40px;
 	}
+}
+
+#main > article {
+	margin: 4%;
 }
 
 		.hentry {
@@ -416,7 +406,6 @@ POSTS & CONTENT STYLES
 		/* want to style individual post classes? Booya! */
 		.post-id {}         /* post by id (i.e. post-3) */
 		.post {
-			margin-left: 35px;
 
 			.article-header h1, .article-header .h1, .entry-title {
 				margin-bottom: 2px;
@@ -433,6 +422,7 @@ POSTS & CONTENT STYLES
 
 			.byline {
 				margin-top: 0px;
+				font-size: 13px;
 			}
 		}            /* general post style */
 		.page {}            /* general article on a page style */
@@ -452,7 +442,9 @@ POSTS & CONTENT STYLES
 		/* entry content */
 		.entry-content {
 
-			p {}
+			p {
+				font-size: 14px;
+			}
 
 
 			ul, ol, table, dl {}
@@ -830,7 +822,7 @@ COMMENT STYLES
 
 		p {
 			margin: 0.7335em 0 1.5em;
-			font-size: 1em;
+			font-size: 14px;
 			line-height: 1.5em;
 		}
 
@@ -950,7 +942,9 @@ COMMENT FORM STYLES
 SIDEBARS & ASIDES
 *********************/
 
-.sidebar {}
+.sidebar {
+	margin: 4%;
+}
 
 	.widgettitle {
 		@extend .caps-header;
@@ -984,6 +978,7 @@ SIDEBARS & ASIDES
 			background: $gray-lightest;
 			border: solid 1px $gray-lighter;
 			padding: 6px 4px;
+			max-width: 100%;
 		}
 		#searchsubmit {
 		}
@@ -1011,6 +1006,14 @@ FOOTER STYLES
 
 .footer {
 	clear: both;
+	margin-top: 26px;
+	background: $black;
+	padding-top: 14px;
+	padding-bottom: 30px;
+}
+#inner-footer {
+	color: $gray-light;
+	font-size: 14px;
 }
 
 	/*

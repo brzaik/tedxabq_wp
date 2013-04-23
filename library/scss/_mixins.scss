@@ -226,7 +226,6 @@ BUTTONS
 	cursor: pointer;
 	margin-bottom: 20px;
 	line-height: 21px;
-	border-radius: 4px;
 	@include css-gradient($link-color, darken($link-color, 5%));
 
 

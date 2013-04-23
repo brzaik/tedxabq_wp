@@ -61,6 +61,7 @@
 					<div class="main-menu-nav">
 						<nav class="clearfix" role="navigation">
 							<?php bones_main_nav(); ?>
+							<a href="#" id="pull">Menu</a>
 						</nav>
 					</div>
 

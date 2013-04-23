@@ -35,41 +35,68 @@ HEADER STYLES
 
 	#logo {}
 
+.caps-header.archive-title {
+	padding-left: 35px;
+}
+
+#main > article {
+	margin: 0px;
+	margin-left: 35px;
+}
+
 /*********************
 HERO STRIPE
 *********************/
 
-// .hero {
-// 	&.frontpage {
-// 		.hero-content {
-// 			border-left: solid 1px $white;
-// 			border-right: solid 1px $white;
-// 		}
+.hero {
+	background: $black;
+	width: 100%;
+	margin: 0;
 
-// 		.slideshow {
-// 			border-right: solid 1px $white;
-// 			width: 658px;
-// 			float: left;
-// 		}
+	&.frontpage {
 
-// 		.videos-cont {
-// 			float: right;
-// 			width: 340px;
+		.slideshow {
+			width: 658px;
+			float: left;
+		}
 
-// 			.left-col {
-// 				border-right: solid 1px $white;
-// 				height: 336px;
-// 				float: left;
-// 				width: 170px;
-// 			}
-// 			.right-col {
-// 				height: 336px;
-// 				width: 170px;
-// 				float: right;
-// 			}
-// 		}
-// 	}
-// }
+		.videos-cont {
+			float: right;
+			width: 340px;
+
+			a.video_thumb { 
+				display: block;
+				float: left;
+				width: 170px;
+				color: $white;
+				height: 168px;
+				position: relative;
+				border-left: solid 1px $white;
+				border-bottom: solid 1px $white;
+			}
+			a.video_thumb > img {
+				width: 168px;
+				z-index: 1;
+				position: absolute;
+
+			}
+			a.video_thumb > p {
+				z-index: 2;
+				position: absolute;
+				bottom: 0px;
+				left: 0px;
+				background: $black;
+				font-size: 0.7em;
+				display: block;
+				padding: 4px 6px;
+				margin: 0px;
+				-moz-hyphens: none;
+  			-webkit-hyphens: none;
+  			hyphens: none;
+			}
+		}
+	}
+}
 
 /*********************
 NAVIGATION STYLES
@@ -171,6 +198,7 @@ NAVIGATION STYLES
 
 } /* end .nav */
 
+
 .nav.community-nav {
 
 }
@@ -213,12 +241,39 @@ HERO STRIPE
 	}
 }
 
+.video-archives-stripe {
+	.left-col {
+		float: left;
+		width: 828px; /* 658px; */
+	}
+	.right-col {
+		float: right;
+		width: 170px;
+		background: $black;
+
+		.padding-cont {
+			padding: 8px;
+		}
+	}
+}
+
+/*********************
+POST FORMATTING
+*********************/
+.entry-content p {
+	font-size: 15px;
+}
+.comment_content p {
+	font-size: 15px;
+}
+
 /*********************
 SIDEBARS & ASIDES
 *********************/
 
 .sidebar {
 	width: 22%;
+	margin: 0;
 }
 
 	.widgettitle {}

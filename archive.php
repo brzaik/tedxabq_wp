@@ -4,6 +4,7 @@
 
 				<div id="inner-content" class="wrap clearfix">
 
+						<br />
 						<?php if (is_category()) { ?>
 							<h1 class="archive-title h4 caps-header underlined-header">
 								<span><?php _e("Posts Categorized:", "bonestheme"); ?></span> <?php single_cat_title(); ?>

@@ -4,8 +4,11 @@
 
 				<div id="inner-content" class="wrap clearfix">
 
+					<br />
+					<h1 class="archive-title h4 caps-header underlined-header"><span><?php _e('Search Results for:', 'bonestheme'); ?></span> <?php echo esc_attr(get_search_query()); ?></h1>
+
 					<div id="main" class="eightcol first clearfix" role="main">
-						<h1 class="archive-title"><span><?php _e('Search Results for:', 'bonestheme'); ?></span> <?php echo esc_attr(get_search_query()); ?></h1>
+
 
 						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
