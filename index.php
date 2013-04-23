@@ -6,7 +6,18 @@
 						<?php if ( function_exists( "easingsliderlite" ) ) { easingsliderlite(); } ?>
 					</div>
 					<div class="videos-cont wrap clearfix">
+						<?php include_once(ABSPATH.WPINC.'/feed.php');
+						  $rss = fetch_feed('http://tedxtalks.ted.com/feed/magnify.rss/tedxabq');
+						  $maxitems = $rss->get_item_quantity(4);
+						?>
 
+						<?php foreach ($rss->get_items(0, $maxitems) as $item): ?>
+						  <a class="video_thumb" href='<?php echo $item->get_permalink(); ?>'title='<?php echo 'Posted '.$item->get_date('j F Y | g:i a'); ?>'>
+						    <img src="<?php echo $item->get_enclosure()->get_thumbnail(); ?>" />
+						    <?php $concat_title = explode(': ', $item->get_title()); ?>
+						    <p><?php echo $concat_title[0]; ?></p>
+						  </a>
+						<?php endforeach; ?>
 					</div>
 				</div>
 			</div>

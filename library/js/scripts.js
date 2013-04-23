@@ -68,6 +68,8 @@ jQuery(document).ready(function($) {
 	
 	// add all your scripts here
 	
+    // show/hide responsive menu bar
+    // (http://www.hongkiat.com/blog/responsive-web-nav/)
     var pull        = $('#pull');
         menu        = $(pull).parent().find('ul');
         menuHeight  = menu.height();
