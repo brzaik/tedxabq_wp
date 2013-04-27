@@ -161,5 +161,57 @@ function bones_wpsearch($form) {
 	return $form;
 } // don't remove this bracket!
 
+// Register Custom Post Type
+function education_posts() {
+	$labels = array(
+		'name'                => _x( 'EducationPosts', 'Post Type General Name', 'text_domain' ),
+		'singular_name'       => _x( 'EducationPost', 'Post Type Singular Name', 'text_domain' ),
+		'menu_name'           => __( 'TEDxABQ Education', 'text_domain' ),
+		'parent_item_colon'   => __( 'Parent Education Post:', 'text_domain' ),
+		'all_items'           => __( 'All Education community posts', 'text_domain' ),
+		'view_item'           => __( 'View Education community post', 'text_domain' ),
+		'add_new_item'        => __( 'Add New Education community post', 'text_domain' ),
+		'add_new'             => __( 'New Education community post', 'text_domain' ),
+		'edit_item'           => __( 'Edit Education community post', 'text_domain' ),
+		'update_item'         => __( 'Update Education community post', 'text_domain' ),
+		'search_items'        => __( 'Search Education community posts', 'text_domain' ),
+		'not_found'           => __( 'No Education community posts found', 'text_domain' ),
+		'not_found_in_trash'  => __( 'No Education community posts found in Trash', 'text_domain' ),
+	);
+
+	$rewrite = array(
+		'slug'                => 'education',
+		'with_front'          => true,
+		'pages'               => true,
+		'feeds'               => true,
+	);
+
+	$args = array(
+		'label'               => __( 'education_post', 'text_domain' ),
+		'description'         => __( 'TEDxABQ Education posts', 'text_domain' ),
+		'labels'              => $labels,
+		'supports'            => array( ),
+		'taxonomies'          => array( 'category', 'post_tag' ),
+		'hierarchical'        => false,
+		'public'              => true,
+		'show_ui'             => true,
+		'show_in_menu'        => true,
+		'show_in_nav_menus'   => true,
+		'show_in_admin_bar'   => true,
+		'menu_position'       => 5,
+		'menu_icon'           => '',
+		'can_export'          => true,
+		'has_archive'         => true,
+		'exclude_from_search' => false,
+		'publicly_queryable'  => true,
+		'rewrite'             => $rewrite,
+		'capability_type'     => 'page',
+	);
+
+	register_post_type( 'education_post', $args );
+}
+
+// Hook into the 'init' action
+add_action( 'init', 'education_posts', 0 );
 
 ?>
