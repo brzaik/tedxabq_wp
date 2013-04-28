@@ -387,6 +387,27 @@ POSTS & CONTENT STYLES
 	margin: 4%;
 }
 
+#main article {
+
+	.article-header h1, .article-header .h1, .entry-title {
+		margin-bottom: 2px;
+		line-height: normal;
+		font-weight: bold;
+
+		a { 
+			color: $black;
+			font-weight: bold;
+
+			&:hover { text-decoration: underline; }
+		}
+	}
+
+	.byline {
+		margin-top: 0px;
+		font-size: 13px;
+	}
+}
+
 		.hentry {
 
 			header {}
@@ -406,26 +427,8 @@ POSTS & CONTENT STYLES
 
 		/* want to style individual post classes? Booya! */
 		.post-id {}         /* post by id (i.e. post-3) */
-		.post {
 
-			.article-header h1, .article-header .h1, .entry-title {
-				margin-bottom: 2px;
-				line-height: normal;
-				font-weight: bold;
-
-				a { 
-					color: $black;
-					font-weight: bold;
-
-					&:hover { text-decoration: underline; }
-				}
-			}
-
-			.byline {
-				margin-top: 0px;
-				font-size: 13px;
-			}
-		}            /* general post style */
+		           /* general post style */
 		.page {}            /* general article on a page style */
 		.attachment {}      /* general style on an attatchment */
 		.sticky {}          /* sticky post style */
