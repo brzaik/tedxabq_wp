@@ -211,6 +211,8 @@ function bones_theme_support() {
 	register_nav_menus(
 		array(
 			'main-nav' => __( 'The Main Menu', 'bonestheme' ),   // main nav in header
+      'education-nav' => __( 'TEDxABQ Education Sub-Menu', 'bonestheme' ),   // education nav in archive-education
+      'women-nav' => __( 'TEDxABQ Women Sub-Menu', 'bonestheme' ),   // women nav in archive-women
 			'community-nav' => __( 'Top of Page TEDxABQ Community Menu', 'bonestheme' ),   // top black bar nav for TEDxABQ communities
       'footer-links' => __( 'Footer Links', 'bonestheme' ) // secondary nav in footer
 		)
@@ -257,6 +259,42 @@ function bones_main_nav() {
       'fallback_cb' => 'bones_main_nav_fallback'      // fallback function
   ));
 } /* end bones main nav */
+
+// main menu for the Education sub-site
+function bones_education_nav() {
+  // display the wp3 menu if available
+    wp_nav_menu(array(
+      'container' => false,                           // remove nav container
+      'container_class' => 'menu clearfix',           // class of container (should you choose to use it)
+      'menu' => __( 'TEDxABQ Education Sub-Menu', 'bonestheme' ),  // nav name
+      'menu_class' => 'nav clearfix',         // adding custom nav class
+      'theme_location' => 'main-nav',                 // where it's located in the theme
+      'before' => '',                                 // before the menu
+        'after' => '',                                  // after the menu
+        'link_before' => '',                            // before each link
+        'link_after' => '',                             // after each link
+        'depth' => 0,                                   // limit the depth of the nav
+      'fallback_cb' => 'bones_main_nav_fallback'      // fallback function
+  ));
+} /* end bones education nav */
+
+// main menu for the Women sub-site
+function bones_women_nav() {
+  // display the wp3 menu if available
+    wp_nav_menu(array(
+      'container' => false,                           // remove nav container
+      'container_class' => 'menu clearfix',           // class of container (should you choose to use it)
+      'menu' => __( 'TEDxABQ Women Sub-Menu', 'bonestheme' ),  // nav name
+      'menu_class' => 'nav clearfix',         // adding custom nav class
+      'theme_location' => 'main-nav',                 // where it's located in the theme
+      'before' => '',                                 // before the menu
+        'after' => '',                                  // after the menu
+        'link_before' => '',                            // before each link
+        'link_after' => '',                             // after each link
+        'depth' => 0,                                   // limit the depth of the nav
+      'fallback_cb' => 'bones_main_nav_fallback'      // fallback function
+  ));
+} /* end bones women nav */
 
 // the footer menu (should you choose to use one)
 function bones_footer_links() {

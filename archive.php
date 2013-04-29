@@ -1,5 +1,12 @@
 <?php get_header(); ?>
 
+			<div class="main-menu-nav wrap">
+			  <nav class="clearfix" role="navigation">
+			    <?php bones_main_nav(); ?>
+			    <a href="#" id="pull">Menu</a>
+			  </nav>
+			</div>
+
 			<div id="content">
 
 				<div id="inner-content" class="wrap clearfix">

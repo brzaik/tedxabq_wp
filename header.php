@@ -57,14 +57,6 @@
 					<!-- if you'd like to use the site description you can un-comment it below -->
 					<?php // bloginfo('description'); ?>
 
-
-					<div class="main-menu-nav">
-						<nav class="clearfix" role="navigation">
-							<?php bones_main_nav(); ?>
-							<a href="#" id="pull">Menu</a>
-						</nav>
-					</div>
-
 				</div> <!-- end #inner-header -->
 
 			</header> <!-- end header -->

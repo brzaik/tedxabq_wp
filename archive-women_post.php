@@ -1,8 +1,8 @@
-<?php get_header('education'); ?>
+<?php get_header(); ?>
 
       <div class="main-menu-nav wrap">
         <nav class="clearfix" role="navigation">
-          <?php bones_education_nav(); ?>
+          <?php bones_women_nav(); ?>
           <a href="#" id="pull">Menu</a>
         </nav>
       </div>
