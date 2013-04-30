@@ -34,6 +34,19 @@
 		<?php wp_head(); ?>
 		<!-- end of wordpress head -->
 
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/library/css/jquery.countdown.css">
+		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/library/js/libs/jquery.countdown.min.js"></script>
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+				var newYear = new Date(); 
+				newYear = new Date(2013,09,04); 
+				$('#defaultCountdown').countdown({until: newYear, format: 'YOWDHMS', significant: 3}); 
+			});
+		</script>
+
 		<!-- drop Google Analytics Here -->
 		<!-- end analytics -->
 
@@ -52,7 +65,15 @@
 				<div id="inner-header" class="wrap clearfix">
 
 					<!-- to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> -->
-					<p id="logo" class="h1"><a href="<?php echo home_url(); ?>" rel="nofollow"><img src="<?php echo get_template_directory_uri(); ?>/library/images/tedxabq_mainlogo.png" /></a></p>
+					<div class="clearfix">
+						<div class="sevencol first">
+							<p id="logo" class="h1"><a href="<?php echo home_url(); ?>" rel="nofollow"><img src="<?php echo get_template_directory_uri(); ?>/library/images/tedxabq_mainlogo.png" /></a></p>
+						</div>
+						<div class="fivecol clearfix" style="margin-top: 28px; margin-bottom: 24px;">
+							<div id="defaultCountdown"></div>
+							<div style="float: left;">UNTIL TEDxABQ<br />2013</div>
+						</div>
+					</div>
 
 					<!-- if you'd like to use the site description you can un-comment it below -->
 					<?php // bloginfo('description'); ?>
