@@ -479,6 +479,11 @@ do they need tweaking?
   top: 10px;
 }
 
+/* line 25, ../scss/_767max.scss */
+.fp-countdown, .videos-cont {
+  display: none;
+}
+
 /******************************************************************
 Site Name:
 Author:

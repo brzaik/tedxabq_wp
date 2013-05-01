@@ -15,12 +15,16 @@
 	display: block;
 	float: left;
 	font-size: 75%;
+	width: 65px;
 	margin-left: 16px;
 	margin-right: 16px;
 	text-align: center;
 	font-weight: bold;
 	line-height: normal;
 	color: #888;
+}
+.countdown_section:first-child {
+	width: 45px;
 }
 .countdown_amount {
 	font-size: 5em;

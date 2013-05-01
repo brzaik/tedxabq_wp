@@ -42,7 +42,7 @@
 		<script type="text/javascript">
 			$(document).ready(function() {
 				var newYear = new Date(); 
-				newYear = new Date(2013,09,07); 
+				newYear = new Date(2013,09,01); 
 				$('#defaultCountdown').countdown({until: newYear, format: 'YOWDHMS', significant: 3}); 
 			});
 		</script>
@@ -66,10 +66,10 @@
 
 					<!-- to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> -->
 					<div class="clearfix">
-						<div class="sevencol first">
+						<div class="sixcol first">
 							<p id="logo" class="h1"><a href="<?php echo home_url(); ?>" rel="nofollow"><img src="<?php echo get_template_directory_uri(); ?>/library/images/tedxabq_mainlogo.png" /></a></p>
 						</div>
-						<div class="fp-countdown fivecol clearfix" style="margin-top: 28px; margin-bottom: 24px;">
+						<div class="fp-countdown sixcol clearfix" style="margin-top: 28px; margin-bottom: 24px;">
 							<div id="defaultCountdown"></div>
 							<div class="countdown-text" style="float: left;">
 								<p>UNTIL TEDxABQ</p>
