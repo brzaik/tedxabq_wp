@@ -42,7 +42,7 @@
 		<script type="text/javascript">
 			$(document).ready(function() {
 				var newYear = new Date(); 
-				newYear = new Date(2013,09,04); 
+				newYear = new Date(2013,09,07); 
 				$('#defaultCountdown').countdown({until: newYear, format: 'YOWDHMS', significant: 3}); 
 			});
 		</script>
@@ -69,9 +69,13 @@
 						<div class="sevencol first">
 							<p id="logo" class="h1"><a href="<?php echo home_url(); ?>" rel="nofollow"><img src="<?php echo get_template_directory_uri(); ?>/library/images/tedxabq_mainlogo.png" /></a></p>
 						</div>
-						<div class="fivecol clearfix" style="margin-top: 28px; margin-bottom: 24px;">
+						<div class="fp-countdown fivecol clearfix" style="margin-top: 28px; margin-bottom: 24px;">
 							<div id="defaultCountdown"></div>
-							<div style="float: left;">UNTIL TEDxABQ<br />2013</div>
+							<div class="countdown-text" style="float: left;">
+								<p>UNTIL TEDxABQ</p>
+								<p class="date-line">9.7.2013</p>
+								<p style="letter-spacing: 0.09em;">POPEJOY HALL</p>
+							</div>
 						</div>
 					</div>
 

@@ -1,6 +1,6 @@
 /* jQuery Countdown styles 1.6.2. */
 .hasCountdown {
-	
+	line-height: 1px;
 }
 .countdown_rtl {
 	direction: rtl;

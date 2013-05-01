@@ -171,6 +171,23 @@ HEADER STYLES
 		img { max-width: 100%; }
 	}
 
+	.fp-countdown {
+		p {
+			margin: 0px;
+			letter-spacing: 0.05em;
+			line-height: normal;
+			color: $gray-dark;
+		}
+		.date-line {
+			font-size: 2em;
+		}
+		.countdown-text {
+			margin: 8px 0px 8px 8px;
+			border-left: solid 1px $gray-dark;
+			padding-left: 22px;
+		}
+	}
+
 /*********************
 NAVIGATION STYLES
 *********************/
