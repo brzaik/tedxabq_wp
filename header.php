@@ -42,7 +42,7 @@
 		<script type="text/javascript">
 			$(document).ready(function() {
 				var newYear = new Date(); 
-				newYear = new Date(2013,09,01); 
+				newYear = new Date(2013,09,07); 
 				$('#defaultCountdown').countdown({until: newYear, format: 'YOWDHMS', significant: 3}); 
 			});
 		</script>
