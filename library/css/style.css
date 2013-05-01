@@ -1014,9 +1014,9 @@ HEADER STYLES
 }
 /* line 186, ../scss/_base.scss */
 .fp-countdown .countdown-text {
-  margin: 8px 0px 8px 8px;
+  margin: 8px 0px 8px 12px;
   border-left: solid 1px #1e1d1d;
-  padding-left: 22px;
+  padding-left: 26px;
 }
 
 /*********************
