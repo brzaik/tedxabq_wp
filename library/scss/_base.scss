@@ -326,6 +326,11 @@ HERO STRIPE
 	width: 96%;
 	margin: 0 2%;
 
+	img { 
+		max-width: 100%; 
+		height: 100%;
+	}
+	
 	&.frontpage {
 		.hero-content {
 			@extend .clearfix;

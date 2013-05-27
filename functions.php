@@ -50,6 +50,7 @@ require_once('library/custom-post-type.php'); // you can disable this if you lik
 // Thumbnail sizes
 add_image_size( 'bones-thumb-600', 600, 150, true );
 add_image_size( 'bones-thumb-300', 300, 100, true );
+add_image_size( 'page-thumb-1000', 1000, 9999 );
 /*
 to add more sizes, simply copy a line from above
 and change the dimensions & name. As long as you
@@ -190,7 +191,7 @@ function education_posts() {
 		'label'               => __( 'education_post', 'text_domain' ),
 		'description'         => __( 'TEDxABQ Education posts', 'text_domain' ),
 		'labels'              => $labels,
-		'supports'            => array( ),
+		'supports'            => array( 'title', 'editor', 'comments', 'thumbnail' ),
 		'taxonomies'          => array( 'category', 'post_tag' ),
 		'hierarchical'        => false,
 		'public'              => true,
@@ -243,7 +244,7 @@ function women_posts() {
 		'label'               => __( 'women_post', 'text_domain' ),
 		'description'         => __( 'TEDxABQ Women posts', 'text_domain' ),
 		'labels'              => $labels,
-		'supports'            => array( ),
+		'supports'            => array( 'title', 'editor', 'comments', 'thumbnail' ),
 		'taxonomies'          => array( 'category', 'post_tag' ),
 		'hierarchical'        => false,
 		'public'              => true,
@@ -266,5 +267,8 @@ function women_posts() {
 
 // Hook into the 'init' action
 add_action( 'init', 'women_posts', 0 );
+
+// Add post-thumbnails support to the two new Education and Women post types
+
 
 ?>

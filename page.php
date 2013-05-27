@@ -1,5 +1,26 @@
 <?php get_header(); ?>
 
+			<div class="main-menu-nav wrap">
+			  <nav class="clearfix" role="navigation">
+			    <?php bones_main_nav(); ?>
+			    <a href="#" id="pull">Menu</a>
+			  </nav>
+			</div>
+
+			<?php 
+			if (has_post_thumbnail() ) {
+			?>
+
+			<div class="hero">
+				<div class="hero-content">
+					<?php the_post_thumbnail('page-thumb-1000'); ?>
+				</div>
+			</div>
+
+			<?php
+			}
+			?>
+
 			<div id="content">
 
 				<div id="inner-content" class="wrap clearfix">
