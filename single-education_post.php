@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header('education'); ?>
 
       <div class="main-menu-nav wrap">
         <nav class="clearfix" role="navigation">
