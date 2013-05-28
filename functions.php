@@ -51,6 +51,7 @@ require_once('library/custom-post-type.php'); // you can disable this if you lik
 add_image_size( 'bones-thumb-600', 600, 150, true );
 add_image_size( 'bones-thumb-300', 300, 100, true );
 add_image_size( 'page-thumb-1000', 1000, 9999 );
+add_image_size( 'video-thumb-fp', 168, 168, true );
 /*
 to add more sizes, simply copy a line from above
 and change the dimensions & name. As long as you
@@ -285,7 +286,19 @@ function women_posts() {
 // Hook into the 'init' action
 add_action( 'init', 'women_posts', 0 );
 
-// Add post-thumbnails support to the two new Education and Women post types
 
+function curated_videos() {
+	register_post_type( 'curated_video', array(
+	  'labels' => array(
+	    'name' => 'Curated Video Link',
+	    'singular_name' => 'CuratedVideo',
+	   ),
+	  'description' => 'Curated links to past TEDxABQ talk videos.',
+	  'public' => true,
+	  'menu_position' => 5,
+	  'supports' => array( 'title', 'editor', 'custom-fields' )));
+}
+
+add_action( 'init', 'curated_videos' );
 
 ?>

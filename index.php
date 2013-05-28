@@ -22,18 +22,27 @@
 						<?php if ( function_exists( "easingsliderlite" ) ) { easingsliderlite(); } ?>
 					</div>
 					<div class="videos-cont wrap clearfix">
-						<?php include_once(ABSPATH.WPINC.'/feed.php');
-						  $rss = fetch_feed('http://tedxtalks.ted.com/feed/magnify.rss/tedxabq');
-						  $maxitems = $rss->get_item_quantity(4);
-						?>
 
-						<?php foreach ($rss->get_items(0, $maxitems) as $item): ?>
-						  <a class="video_thumb" href='<?php echo $item->get_permalink(); ?>'title='<?php echo 'Posted '.$item->get_date('j F Y | g:i a'); ?>'>
-						    <img src="<?php echo $item->get_enclosure()->get_thumbnail(); ?>" />
-						    <?php $concat_title = explode(': ', $item->get_title()); ?>
-						    <p><?php echo $concat_title[0]; ?></p>
-						  </a>
-						<?php endforeach; ?>
+						<?php
+				    	$all_curated_videos = array(
+				    		'post_type' => 'curated_video',
+				    		'posts_per_page' => 4,
+				    		'orderby' => 'rand'
+				    	);
+				    	$video_collection = new WP_Query( $all_curated_videos );
+				    ?>
+
+						<?php while ( $video_collection->have_posts() ) : $video_collection->the_post(); ?>
+
+							<a class="video_thumb" href='<?php the_field('video_url'); ?>'>
+							  <?php $image = wp_get_attachment_image_src(get_field('thumbnail'), 'video-thumb-fp'); ?>
+							  <img src="<?php echo $image[0]; ?>" alt="<?php echo get_the_title(get_field('thumbnail')) ?>" />
+
+							  <p><?php the_field('video_title'); ?></p>
+							</a>
+
+						<?php endwhile; ?>
+
 					</div>
 				</div>
 			</div>
