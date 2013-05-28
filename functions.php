@@ -150,6 +150,23 @@ function bones_comments($comment, $args, $depth) {
 <?php
 } // don't remove this bracket!
 
+/************* SOCIAL MEDIA MENU *****************/
+function bones_social_menu() { ?>
+	<ul class="social-menu clearfix">
+  	<li>
+  		<a href="https://plus.google.com/u/0/107687997543235512516/posts"><img src="<?php echo get_template_directory_uri(); ?>/library/images/social/black-square_googleplus.png" /></a>
+  	</li>
+  	<li>
+  		<a href="http://twitter.com/TEDxABQ/"><img src="<?php echo get_template_directory_uri(); ?>/library/images/social/black-square_twitter.png" /></a>
+  	</li>
+  	<li>
+  		<a href="http://facebook.com/TEDxABQ"><img src="<?php echo get_template_directory_uri(); ?>/library/images/social/black-square_facebook.png" /></a>
+  	</li>
+  </ul>
+<?php
+} // don't remove this bracket!
+
+
 /************* SEARCH FORM LAYOUT *****************/
 
 // Search Form

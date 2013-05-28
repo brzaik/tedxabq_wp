@@ -312,6 +312,29 @@ and more scalable.
 
 	}  /* end current highlighters */
 }
+
+.social-menu {
+	margin: 5px 5px 0px 0px;
+	padding: 0px;
+
+	li {
+		float: right;
+		margin: 0px 4px;
+		padding: 0px;
+		line-height: normal;
+
+		a {
+			display: block;
+			opacity: 0.5;
+
+			&:hover {
+				opacity: 1.0;
+			}
+		}
+
+	}
+}
+
 .main-menu-nav a#pull { display: none; }
 .community-nav-cont {
 	background: $black;

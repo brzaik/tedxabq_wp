@@ -2,8 +2,17 @@
 
       <div class="main-menu-nav wrap">
         <nav class="clearfix" role="navigation">
-          <?php bones_education_nav(); ?>
+
+          <div class="tencol first">
+            <?php bones_education_nav(); ?>
+          </div>
+          
+          <div class="twocol">
+            <?php bones_social_menu(); ?>
+          </div>
+          
           <a href="#" id="pull">Menu</a>
+
         </nav>
       </div>
 

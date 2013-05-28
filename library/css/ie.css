@@ -459,15 +459,13 @@ do they need tweaking?
   display: block;
   width: 100%;
   position: relative;
-  border-left: solid 1px white;
-  border-right: solid 1px white;
   color: black;
   font-weight: bold;
   background: #d1d0d0;
   padding: 4px 12px;
 }
 
-/* line 15, ../scss/_767max.scss */
+/* line 13, ../scss/_767max.scss */
 .main-menu-nav a#pull:after {
   content: "";
   background: url("../images/responsivenav_list.png") top right no-repeat;
@@ -479,7 +477,7 @@ do they need tweaking?
   top: 10px;
 }
 
-/* line 25, ../scss/_767max.scss */
+/* line 23, ../scss/_767max.scss */
 .fp-countdown, .videos-cont {
   display: none;
 }
