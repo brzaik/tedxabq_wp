@@ -24,10 +24,15 @@
 					<div class="videos-cont wrap clearfix">
 
 						<?php
-				    	$all_curated_videos = array(
+				    	$all_curated_videos = array( 
 				    		'post_type' => 'curated_video',
-				    		'posts_per_page' => 4,
-				    		'orderby' => 'rand'
+				    		'meta_query' => array(
+				    			'key' => the_field('community'),
+				    			'value' => array( 'tedxabq' ),
+				    			'compare' => 'IN'
+				    		),
+				    		'posts_per_page' => 4, 
+				    		'orderby' => 'rand' 
 				    	);
 				    	$video_collection = new WP_Query( $all_curated_videos );
 				    ?>

@@ -62,6 +62,8 @@
 					<?php bones_community_nav(); ?>
 				</nav>
 
+				<br />
+				
 				<div id="inner-header" class="wrap clearfix">
 
 					<!-- to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> -->
