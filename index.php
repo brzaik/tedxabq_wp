@@ -12,7 +12,7 @@
 				    	<?php bones_social_menu(); ?>
 					  </div>
 				    
-				    <a href="#" id="pull">Menu</a>
+				    <a href="#" id="pull">TEDxABQ Menu</a>
 
 				  </nav>
 				</div>

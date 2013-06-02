@@ -58,9 +58,18 @@
 
 			<header class="header" role="banner">
 
-				<nav class="global-nav-cont" role="navigation">
-					<?php bones_community_nav(); ?>
-				</nav>
+				<div class="wrap clearfix">
+					<div class="sixcol first">
+						<nav class="global-nav-cont" role="navigation">
+							<?php bones_community_nav(); ?>
+						</nav>
+					</div>
+					<div class="sixcol">
+						<nav class="global-nav-cont" role="navigation">
+							<?php bones_global_nav(); ?>
+						</nav>
+					</div>
+				</div>
 
 				<br />
 				

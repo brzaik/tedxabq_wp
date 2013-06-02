@@ -600,37 +600,46 @@ NAVIGATION STYLES
 .global-nav-cont > .nav li a {
   padding-bottom: 14px;
 }
+/* line 217, ../scss/_768up.scss */
+.global-nav-cont > .nav.rightfloat-nav li a {
+  margin: 8px 0px 0px 32px;
+}
+
+/* line 221, ../scss/_768up.scss */
+.rightfloat-nav {
+  float: right;
+}
 
 /*********************
 HERO STRIPE
 *********************/
-/* line 224, ../scss/_768up.scss */
+/* line 230, ../scss/_768up.scss */
 .hero .hero-content {
   margin: 0 auto;
 }
 
-/* line 228, ../scss/_768up.scss */
+/* line 234, ../scss/_768up.scss */
 .hero.frontpage .hero-content {
   max-width: 1000px;
 }
 
-/* line 232, ../scss/_768up.scss */
+/* line 238, ../scss/_768up.scss */
 .video-archives-stripe {
   margin-top: -8px;
 }
-/* line 235, ../scss/_768up.scss */
+/* line 241, ../scss/_768up.scss */
 .video-archives-stripe .left-col {
   float: left;
   width: 828px;
   /* 658px; */
 }
-/* line 239, ../scss/_768up.scss */
+/* line 245, ../scss/_768up.scss */
 .video-archives-stripe .right-col {
   float: right;
   width: 170px;
   background: #1e1d1d;
 }
-/* line 244, ../scss/_768up.scss */
+/* line 250, ../scss/_768up.scss */
 .video-archives-stripe .right-col .padding-cont {
   padding: 8px;
 }
@@ -638,12 +647,12 @@ HERO STRIPE
 /*********************
 POST FORMATTING
 *********************/
-/* line 253, ../scss/_768up.scss */
+/* line 259, ../scss/_768up.scss */
 .entry-content p {
   font-size: 15px;
 }
 
-/* line 256, ../scss/_768up.scss */
+/* line 262, ../scss/_768up.scss */
 .comment_content p {
   font-size: 15px;
 }
@@ -651,23 +660,23 @@ POST FORMATTING
 /*********************
 SIDEBARS & ASIDES
 *********************/
-/* line 264, ../scss/_768up.scss */
+/* line 270, ../scss/_768up.scss */
 .sidebar {
   width: 22%;
   margin: 0;
 }
 
-/* line 271, ../scss/_768up.scss */
+/* line 277, ../scss/_768up.scss */
 .widget {
   padding: 0 10px;
   margin: 2.2em 0;
 }
-/* line 276, ../scss/_768up.scss */
+/* line 282, ../scss/_768up.scss */
 .widget ul li {
   margin-bottom: 0.75em;
   /* deep nesting */
 }
-/* line 284, ../scss/_768up.scss */
+/* line 290, ../scss/_768up.scss */
 .widget ul li ul {
   margin-top: 0.75em;
   padding-left: 1em;
@@ -692,7 +701,7 @@ you'll probably need to do quite a bit
 of overriding here if you styled them for
 mobile. Make sure to double check these!
 */
-/* line 392, ../scss/_768up.scss */
+/* line 398, ../scss/_768up.scss */
 .footer-links ul li {
   /*
   be careful with the depth of your menus.
