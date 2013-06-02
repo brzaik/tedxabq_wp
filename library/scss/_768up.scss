@@ -104,7 +104,7 @@ NAVIGATION STYLES
 	.nav > li {
 		margin-right: 12px;
 	}
-	
+
 	.nav li a { 
 		padding: 9px;
 	}
@@ -127,6 +127,20 @@ NAVIGATION STYLES
 				background-color: #dedede;
 
 			}
+		}
+
+		> a:after {
+	    color: #888;
+	    content: ' ▾';
+		}
+
+		> a:hover:after {
+	    color: #444;
+	    content: ' ▾';
+		}
+
+		> a:only-child:after {
+	    content: '';
 		}
 
 		&:first-child {}
