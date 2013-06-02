@@ -1626,8 +1626,12 @@ FOOTER STYLES
   padding-top: 14px;
   padding-bottom: 30px;
 }
-
 /* line 1081, ../scss/_base.scss */
+.footer p {
+  color: #d1d0d0;
+}
+
+/* line 1085, ../scss/_base.scss */
 #inner-footer {
   color: #868282;
   font-size: 14px;
