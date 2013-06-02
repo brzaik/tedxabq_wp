@@ -1,19 +1,21 @@
 <?php get_header(); ?>
 
-			<div class="main-menu-nav wrap">
-			  <nav class="clearfix" role="navigation">
-			    
-			    <div class="tencol first">
-			    	<?php bones_main_nav(); ?>
-			    </div>
-			    
-			    <div class="twocol">
-			    	<?php bones_social_menu(); ?>
-				  </div>
-			    
-			    <a href="#" id="pull">Menu</a>
+			<div class="main-menu-nav">
+				<div class="wrap">
+				  <nav class="clearfix" role="navigation">
+				    
+				    <div class="tencol first">
+				    	<?php bones_main_nav(); ?>
+				    </div>
+				    
+				    <div class="twocol">
+				    	<?php bones_social_menu(); ?>
+					  </div>
+				    
+				    <a href="#" id="pull">Menu</a>
 
-			  </nav>
+				  </nav>
+				</div>
 			</div>
 
 			<div class="hero frontpage">
@@ -68,8 +70,7 @@
 
 				<div id="inner-content" class="wrap clearfix">
 
-					<h1 class="archive-title h4 caps-header underlined-header">Latest Updates</h1>
-
+					
 						<div id="main" class="eightcol first clearfix" role="main">
 
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>

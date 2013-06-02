@@ -20,7 +20,7 @@ The comments page for Bones
 
 <?php if ( have_comments() ) : ?>
 	<br /><br />
-	<h3 id="comments" class="h4 caps-header underlined-header"><?php comments_number(__('<span>No</span> Responses', 'bonestheme'), __('<span>One</span> Response', 'bonestheme'), _n('<span>%</span> Response', '<span>%</span> Responses', get_comments_number(),'bonestheme') );?> to &#8220;<?php the_title(); ?>&#8221;</h3>
+	<h3 id="comments" class="h4 caps-header"><?php comments_number(__('<span>No</span> Responses', 'bonestheme'), __('<span>One</span> Response', 'bonestheme'), _n('<span>%</span> Response', '<span>%</span> Responses', get_comments_number(),'bonestheme') );?> to &#8220;<?php the_title(); ?>&#8221;</h3>
 
 	<nav id="comment-nav">
 		<ul class="clearfix">
@@ -59,7 +59,7 @@ The comments page for Bones
 
 <section id="respond" class="respond-form">
 
-	<h3 id="comment-form-title" class="h4 caps-header underlined-header"><?php comment_form_title( __('Leave a Reply', 'bonestheme'), __('Leave a Reply to %s', 'bonestheme' )); ?></h3>
+	<h3 id="comment-form-title" class="h4 caps-header"><?php comment_form_title( __('Leave a Reply', 'bonestheme'), __('Leave a Reply to %s', 'bonestheme' )); ?></h3>
 
 	<div id="cancel-comment-reply">
 		<p class="small"><?php cancel_comment_reply_link(); ?></p>

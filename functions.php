@@ -51,6 +51,7 @@ require_once('library/custom-post-type.php'); // you can disable this if you lik
 add_image_size( 'bones-thumb-600', 600, 150, true );
 add_image_size( 'bones-thumb-300', 300, 100, true );
 add_image_size( 'page-thumb-1000', 1000, 9999 );
+add_image_size( 'page-thumb-expand', 1200, 400, true );
 add_image_size( 'video-thumb-fp', 168, 168, true );
 /*
 to add more sizes, simply copy a line from above

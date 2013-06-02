@@ -67,12 +67,15 @@ $gray-darker:				darken($gray, 30%);
 $gray-darkest:			darken($gray, 40%);
 
 $ted-red:						#ff2b06;
+$gray-hero:					lighten($gray-lighter, 10%);
 
 $bones-pink:        #f01d4f;
 $bones-blue:        #1990db;
 
 $link-color:        $ted-red;
 $link-hover:        darken($link-color, 9%);
+
+$default-font-size:		13px;
 
 /*
 Here's a great tutorial on how to
@@ -213,46 +216,24 @@ BUTTONS
 
 .button, .button:visited {
 	font-family: $sans-serif;
-	border: 1px solid darken($link-color, 13%);
-	border-top-color: darken($link-color, 7%);
-	border-left-color: darken($link-color, 7%);
+	border: none;
 	padding: 4px 12px;
 	color: $white;
 	display: inline-block;
 	font-size: 11px;
 	font-weight: bold;
 	text-decoration: none;
-	text-shadow: 0 1px rgba(0,0,0, .75);
 	cursor: pointer;
 	margin-bottom: 20px;
 	line-height: 21px;
-	@include css-gradient($link-color, darken($link-color, 5%));
-
+	background: $link-color;
 
 	&:hover, &:focus {
 		color: $white;
-	  	border: 1px solid darken($link-color, 13%);
-	  	border-top-color: darken($link-color, 20%);
-	 	border-left-color: darken($link-color, 20%);
-		@include css-gradient(darken($link-color, 5%), darken($link-color, 10%));
+	  background: darken($link-color, 5%);
 	}
 
 	&:active {
-		@include css-gradient(darken($link-color, 5%), $link-color);
-	}
-}
-
-.blue-button, .blue-button:visited {
-	border-color: darken($bones-blue, 10%);
-	text-shadow: 0 1px 1px darken($bones-blue, 10%);
-	@include css-gradient( $bones-blue, darken($bones-blue, 5%) );
-	box-shadow: inset 0 0 3px lighten($bones-blue, 16%);
-
-	&:hover, &:focus {
-		border-color: darken($bones-blue, 15%);
-		@include css-gradient( darken($bones-blue, 4%), darken($bones-blue, 10%) );
-	}
-	&:active {
-		@include css-gradient( darken($bones-blue, 5%), $bones-blue );
+		background: darken($link-color, 5%);
 	}
 }

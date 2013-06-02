@@ -1,19 +1,21 @@
 <?php get_header(); ?>
 
-			<div class="main-menu-nav wrap">
-			  <nav class="clearfix" role="navigation">
+			<div class="main-menu-nav">
+				<div class="wrap">
+				  <nav class="clearfix" role="navigation">
 
-	  	    <div class="tencol first">
-	  	    	<?php bones_main_nav(); ?>
-	  	    </div>
-	  	    
-	  	    <div class="twocol">
-	  	    	<?php bones_social_menu(); ?>
-	  		  </div>
-	  	    
-	  	    <a href="#" id="pull">Menu</a>
+		  	    <div class="tencol first">
+		  	    	<?php bones_main_nav(); ?>
+		  	    </div>
+		  	    
+		  	    <div class="twocol">
+		  	    	<?php bones_social_menu(); ?>
+		  		  </div>
+		  	    
+		  	    <a href="#" id="pull">Menu</a>
 
-			  </nav>
+				  </nav>
+				</div>
 			</div>
 
 			<?php 
@@ -21,8 +23,8 @@
 			?>
 
 			<div class="hero">
-				<div class="hero-content">
-					<?php the_post_thumbnail('page-thumb-1000'); ?>
+				<div class="hero-content expand-img">
+					<?php the_post_thumbnail('page-thumb-expand'); ?>
 				</div>
 			</div>
 

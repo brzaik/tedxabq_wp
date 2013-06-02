@@ -1,19 +1,21 @@
 <?php get_header(); ?>
 
-      <div class="main-menu-nav wrap">
-        <nav class="clearfix" role="navigation">
+      <div class="main-menu-nav">
+        <div class="wrap">
+          <nav class="clearfix" role="navigation">
 
-          <div class="tencol first">
-            <?php bones_women_nav(); ?>
-          </div>
-          
-          <div class="twocol">
-            <?php bones_social_menu(); ?>
-          </div>
-          
-          <a href="#" id="pull">Menu</a>
+            <div class="tencol first">
+              <?php bones_women_nav(); ?>
+            </div>
+            
+            <div class="twocol">
+              <?php bones_social_menu(); ?>
+            </div>
+            
+            <a href="#" id="pull">Menu</a>
 
-        </nav>
+          </nav>
+        </div>
       </div>
 
       <div id="content">

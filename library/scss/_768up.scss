@@ -36,12 +36,10 @@ HEADER STYLES
 	#logo {}
 
 .caps-header.archive-title {
-	padding-left: 35px;
 }
 
 #main > article {
 	margin: 0px;
-	margin-left: 35px;
 }
 
 /*********************
@@ -55,7 +53,7 @@ HERO STRIPE
 	&.frontpage {
 
 		.slideshow {
-			width: 658px;
+			width: 660px;
 			float: left;
 		}
 
@@ -70,8 +68,8 @@ HERO STRIPE
 				color: $white;
 				height: 168px;
 				position: relative;
-				border-left: solid 1px $white;
-				border-bottom: solid 1px $white;
+				border-left: solid 1px $gray-hero;
+				border-bottom: solid 1px $gray-hero;
 			}
 			a.video_thumb > img {
 				width: 168px;
@@ -102,8 +100,10 @@ NAVIGATION STYLES
 *********************/
 
 .main-menu-nav {
-	background: $gray-lighter;
-	margin-bottom: 8px;
+
+	.nav li a { 
+		padding: 9px;
+	}
 }
 
 .nav {
@@ -235,12 +235,16 @@ HERO STRIPE
 
 .hero {
 	.hero-content {
-		width: 1000px;
 		margin: 0 auto;
 	}
 }
+.hero.frontpage .hero-content {
+	max-width: 1000px;
+}
 
 .video-archives-stripe {
+	margin-top: -8px;
+
 	.left-col {
 		float: left;
 		width: 828px; /* 658px; */
@@ -248,7 +252,7 @@ HERO STRIPE
 	.right-col {
 		float: right;
 		width: 170px;
-		background: $black;
+		background: $gray-dark;
 
 		.padding-cont {
 			padding: 8px;

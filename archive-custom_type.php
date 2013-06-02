@@ -1,10 +1,21 @@
 <?php get_header(); ?>
 
-			<div class="main-menu-nav wrap">
-			  <nav class="clearfix" role="navigation">
-			    <?php bones_main_nav(); ?>
-			    <a href="#" id="pull">Menu</a>
-			  </nav>
+			<div class="main-menu-nav">
+			  <div class="wrap">
+			    <nav class="clearfix" role="navigation">
+
+			      <div class="tencol first">
+			        <?php bones_main_nav(); ?>
+			      </div>
+			      
+			      <div class="twocol">
+			        <?php bones_social_menu(); ?>
+			      </div>
+			      
+			      <a href="#" id="pull">Menu</a>
+
+			    </nav>
+			  </div>
 			</div>
 
 			<div id="content">

@@ -21,8 +21,8 @@ single-bookmarks.php
 			?>
 
 			<div class="hero">
-				<div class="hero-content">
-					<?php the_post_thumbnail('page-thumb-1000'); ?>
+				<div class="hero-content expand-img">
+					<?php the_post_thumbnail('page-thumb-expand'); ?>
 				</div>
 			</div>
 
