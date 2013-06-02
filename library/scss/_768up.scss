@@ -101,6 +101,10 @@ NAVIGATION STYLES
 
 .main-menu-nav {
 
+	.nav > li {
+		margin-right: 12px;
+	}
+	
 	.nav li a { 
 		padding: 9px;
 	}
