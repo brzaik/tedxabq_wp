@@ -275,7 +275,7 @@ and more scalable.
 
 // Special variant: Community Nav
 // Black bar that appears at the top of every page on the site
-.nav.community-nav {
+.global-nav-cont > .nav {
 	border: none;
 	margin: 0px;
 
@@ -306,7 +306,6 @@ and more scalable.
 		a {
 			color: $black;
 			font-weight: bold;
-			border-bottom: solid 1px $gray-lighter;
 		}
 
 	}  /* end current highlighters */
@@ -343,7 +342,7 @@ and more scalable.
 }
 
 .main-menu-nav a#pull { display: none; }
-.community-nav-cont {
+.global-nav-cont {
 	background: none;
 }
 

@@ -588,58 +588,49 @@ NAVIGATION STYLES
 
 /* end .nav */
 /* line 205, ../scss/_768up.scss */
-.community-nav-cont .community-nav {
+.global-nav-cont > .nav {
   max-width: 1000px;
   margin: 0 auto;
 }
-/* line 211, ../scss/_768up.scss */
-.community-nav-cont .community-nav li.current-menu-item a:after {
-  top: 67%;
-  border: solid transparent;
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
+/* line 209, ../scss/_768up.scss */
+.global-nav-cont > .nav li.current-menu-item a {
+  background: url(../images/topmenu_activebg.png) bottom center no-repeat;
 }
-/* line 221, ../scss/_768up.scss */
-.community-nav-cont .community-nav li.current-menu-item a:after {
-  border-bottom-color: #ededed;
-  border-width: 8px;
-  left: 50%;
-  margin-left: -8px;
+/* line 213, ../scss/_768up.scss */
+.global-nav-cont > .nav li a {
+  padding-bottom: 14px;
 }
 
 /*********************
 HERO STRIPE
 *********************/
-/* line 237, ../scss/_768up.scss */
+/* line 224, ../scss/_768up.scss */
 .hero .hero-content {
   margin: 0 auto;
 }
 
-/* line 241, ../scss/_768up.scss */
+/* line 228, ../scss/_768up.scss */
 .hero.frontpage .hero-content {
   max-width: 1000px;
 }
 
-/* line 245, ../scss/_768up.scss */
+/* line 232, ../scss/_768up.scss */
 .video-archives-stripe {
   margin-top: -8px;
 }
-/* line 248, ../scss/_768up.scss */
+/* line 235, ../scss/_768up.scss */
 .video-archives-stripe .left-col {
   float: left;
   width: 828px;
   /* 658px; */
 }
-/* line 252, ../scss/_768up.scss */
+/* line 239, ../scss/_768up.scss */
 .video-archives-stripe .right-col {
   float: right;
   width: 170px;
   background: #1e1d1d;
 }
-/* line 257, ../scss/_768up.scss */
+/* line 244, ../scss/_768up.scss */
 .video-archives-stripe .right-col .padding-cont {
   padding: 8px;
 }
@@ -647,12 +638,12 @@ HERO STRIPE
 /*********************
 POST FORMATTING
 *********************/
-/* line 266, ../scss/_768up.scss */
+/* line 253, ../scss/_768up.scss */
 .entry-content p {
   font-size: 15px;
 }
 
-/* line 269, ../scss/_768up.scss */
+/* line 256, ../scss/_768up.scss */
 .comment_content p {
   font-size: 15px;
 }
@@ -660,23 +651,23 @@ POST FORMATTING
 /*********************
 SIDEBARS & ASIDES
 *********************/
-/* line 277, ../scss/_768up.scss */
+/* line 264, ../scss/_768up.scss */
 .sidebar {
   width: 22%;
   margin: 0;
 }
 
-/* line 284, ../scss/_768up.scss */
+/* line 271, ../scss/_768up.scss */
 .widget {
   padding: 0 10px;
   margin: 2.2em 0;
 }
-/* line 289, ../scss/_768up.scss */
+/* line 276, ../scss/_768up.scss */
 .widget ul li {
   margin-bottom: 0.75em;
   /* deep nesting */
 }
-/* line 297, ../scss/_768up.scss */
+/* line 284, ../scss/_768up.scss */
 .widget ul li ul {
   margin-top: 0.75em;
   padding-left: 1em;
@@ -701,7 +692,7 @@ you'll probably need to do quite a bit
 of overriding here if you styled them for
 mobile. Make sure to double check these!
 */
-/* line 405, ../scss/_768up.scss */
+/* line 392, ../scss/_768up.scss */
 .footer-links ul li {
   /*
   be careful with the depth of your menus.

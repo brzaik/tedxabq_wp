@@ -201,30 +201,17 @@ NAVIGATION STYLES
 .nav.community-nav {
 
 }
-.community-nav-cont {
-	.community-nav {
+.global-nav-cont {
+	> .nav {
 		max-width: 1000px;
 		margin: 0 auto;
 
-		li.current-menu-item a {
+		li.current-menu-item a { 
+			background: url(../images/topmenu_activebg.png) bottom center no-repeat;
+		}
 
-			&:after {
-				top: 67%;
-				border: solid transparent;
-				content: " ";
-				height: 0;
-				width: 0;
-				position: absolute;
-				pointer-events: none;
-			}
-
-			&:after {
-				border-bottom-color: #ededed;
-				border-width: 8px;
-				left: 50%;
-				margin-left: -8px;
-			}
-
+		li a { 
+			padding-bottom: 14px;
 		}
 	}
 }

@@ -58,7 +58,7 @@
 
 			<header class="header" role="banner">
 
-				<nav class="community-nav-cont" role="navigation">
+				<nav class="global-nav-cont" role="navigation">
 					<?php bones_community_nav(); ?>
 				</nav>
 
