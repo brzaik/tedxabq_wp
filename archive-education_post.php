@@ -60,7 +60,7 @@
 
             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-            <div id="main" class="eightcol first clearfix" role="main">
+            <div id="main" class="ninecol first clearfix" role="main">
 
               <article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article">
 
@@ -118,7 +118,7 @@
 
             </div> <!-- end #main -->
 
-            <?php get_sidebar(); ?>
+            <?php get_sidebar( 'content_sidebar1' ); ?>
 
                 </div> <!-- end #inner-content -->
 

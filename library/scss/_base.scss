@@ -1075,11 +1075,19 @@ FOOTER STYLES
 	clear: both;
 	margin-top: 26px;
 	background: $black;
-	padding-top: 14px;
-	padding-bottom: 30px;
+	padding-top: 35px;
+	padding-bottom: 50px;
 
 	p {
 		color: $gray-lighter;
+		font-size: 0.85em;
+	}
+
+	.widget {
+		margin: 0px;
+	}
+	.widgettitle:first-child {
+		margin-top: 0px;
 	}
 }
 #inner-footer {

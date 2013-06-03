@@ -1624,15 +1624,24 @@ FOOTER STYLES
   clear: both;
   margin-top: 26px;
   background: black;
-  padding-top: 14px;
-  padding-bottom: 30px;
+  padding-top: 35px;
+  padding-bottom: 50px;
 }
 /* line 1081, ../scss/_base.scss */
 .footer p {
   color: #d1d0d0;
+  font-size: 0.85em;
+}
+/* line 1086, ../scss/_base.scss */
+.footer .widget {
+  margin: 0px;
+}
+/* line 1089, ../scss/_base.scss */
+.footer .widgettitle:first-child {
+  margin-top: 0px;
 }
 
-/* line 1085, ../scss/_base.scss */
+/* line 1093, ../scss/_base.scss */
 #inner-footer {
   color: #868282;
   font-size: 14px;

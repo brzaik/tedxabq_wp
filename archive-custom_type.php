@@ -22,7 +22,7 @@
 
 				<div id="inner-content" class="wrap clearfix">
 
-						<div id="main" class="eightcol first clearfix" role="main">
+						<div id="main" class="ninecol first clearfix" role="main">
 
 						<h1 class="archive-title h4 caps-header"><?php post_type_archive_title(); ?></h1>
 
@@ -82,7 +82,7 @@
 
 						</div> <!-- end #main -->
 
-						<?php get_sidebar(); ?>
+						<?php get_sidebar( 'content_sidebar1' ); ?>
 
 								</div> <!-- end #inner-content -->
 

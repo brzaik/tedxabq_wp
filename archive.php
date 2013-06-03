@@ -118,7 +118,7 @@
 
 						</div> <!-- end #main -->
 
-						<?php get_sidebar(); ?>
+						<?php get_sidebar( 'content_sidebar1' ); ?>
 
 								</div> <!-- end #inner-content -->
 
