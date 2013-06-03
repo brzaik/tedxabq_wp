@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header('women'); ?>
 
       <div class="main-menu-nav">
         <div class="wrap">
