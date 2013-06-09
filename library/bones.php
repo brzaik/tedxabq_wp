@@ -213,6 +213,7 @@ function bones_theme_support() {
 			'main-nav' => __( 'The Main Menu', 'bonestheme' ),   // main nav in header
       'education-nav' => __( 'TEDxABQ Education Sub-Menu', 'bonestheme' ),   // education nav in archive-education
       'women-nav' => __( 'TEDxABQ Women Sub-Menu', 'bonestheme' ),   // women nav in archive-women
+      'salon-nav' => __( 'TEDxABQ Salon Sub-Menu', 'bonestheme' ),   // salon nav in archive-salon
 			'community-nav' => __( 'Top of Page TEDxABQ Community Menu', 'bonestheme' ),   // top bar nav for TEDxABQ communities
       'globalpage-nav' => __( 'Top of Page TEDxABQ Global Links', 'bonestheme' ),   // top bar nav for global TEDxABQ pages (Press, Contact, Donate)
       'footer-links' => __( 'Footer Links', 'bonestheme' ) // secondary nav in footer
@@ -314,6 +315,24 @@ function bones_women_nav() {
       'fallback_cb' => 'bones_main_nav_fallback'      // fallback function
   ));
 } /* end bones women nav */
+
+// main menu for the Women sub-site
+function bones_salon_nav() {
+  // display the wp3 menu if available
+    wp_nav_menu(array(
+      'container' => false,                           // remove nav container
+      'container_class' => 'menu clearfix',           // class of container (should you choose to use it)
+      'menu' => __( 'TEDxABQ Salon Sub-Menu', 'bonestheme' ),  // nav name
+      'menu_class' => 'nav clearfix',         // adding custom nav class
+      'theme_location' => 'salon-nav',                 // where it's located in the theme
+      'before' => '',                                 // before the menu
+        'after' => '',                                  // after the menu
+        'link_before' => '',                            // before each link
+        'link_after' => '',                             // after each link
+        'depth' => 0,                                   // limit the depth of the nav
+      'fallback_cb' => 'bones_main_nav_fallback'      // fallback function
+  ));
+} /* end bones salon nav */
 
 // the footer menu (should you choose to use one)
 function bones_footer_links() {

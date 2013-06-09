@@ -11,7 +11,7 @@
     <!-- Google Chrome Frame for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-    <title><?php if (is_front_page() ) { echo "TEDxABQ Women"; } else { the_title(); echo " - TEDxABQ Women"; } ?></title>
+    <title><?php if (is_front_page() ) { echo "TEDxABQ Salons"; } else { the_title(); echo " - TEDxABQ Salons"; } ?></title>
 
     <!-- mobile meta (hooray!) -->
     <meta name="HandheldFriendly" content="True">
@@ -63,7 +63,7 @@
         <div id="inner-header" class="wrap clearfix">
 
           <!-- to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> -->
-          <p id="logo" class="h1"><a href="<?php echo home_url(); ?>/women" rel="nofollow"><img src="<?php echo get_template_directory_uri(); ?>/library/images/tedxabqWomen_banner.png" /></a></p>
+          <p id="logo" class="h1"><a href="<?php echo home_url(); ?>/salons" rel="nofollow"><img src="<?php echo get_template_directory_uri(); ?>/library/images/tedxabq_mainlogo.png" /></a></p>
 
           <!-- if you'd like to use the site description you can un-comment it below -->
           <?php // bloginfo('description'); ?>

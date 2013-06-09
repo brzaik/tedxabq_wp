@@ -11,7 +11,7 @@
     <!-- Google Chrome Frame for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-    <title><?php wp_title(''); ?></title>
+    <title><?php if (is_front_page() ) { echo "TEDxABQ Education"; } else { the_title(); echo " - TEDxABQ Education"; } ?></title>
 
     <!-- mobile meta (hooray!) -->
     <meta name="HandheldFriendly" content="True">

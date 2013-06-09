@@ -298,6 +298,59 @@ function women_posts() {
 add_action( 'init', 'women_posts', 0 );
 
 
+function salon_posts() {
+	$labels = array(
+		'name'                => _x( 'SalonPosts', 'Post Type General Name', 'text_domain' ),
+		'singular_name'       => _x( 'SalonPost', 'Post Type Singular Name', 'text_domain' ),
+		'menu_name'           => __( 'TEDxABQ Salon', 'text_domain' ),
+		'parent_item_colon'   => __( 'Parent TEDxABQ Salon Post:', 'text_domain' ),
+		'all_items'           => __( 'All TEDxABQ Salon community posts', 'text_domain' ),
+		'view_item'           => __( 'View TEDxABQ Salon community post', 'text_domain' ),
+		'add_new_item'        => __( 'Add New TEDxABQ Salon community post', 'text_domain' ),
+		'add_new'             => __( 'New TEDxABQ Salon community post', 'text_domain' ),
+		'edit_item'           => __( 'Edit TEDxABQ Salon community post', 'text_domain' ),
+		'update_item'         => __( 'Update TEDxABQ Salon community post', 'text_domain' ),
+		'search_items'        => __( 'Search TEDxABQ Salon community posts', 'text_domain' ),
+		'not_found'           => __( 'No TEDxABQ Salon community posts found', 'text_domain' ),
+		'not_found_in_trash'  => __( 'No TEDxABQ Salon community posts found in Trash', 'text_domain' ),
+	);
+
+	$rewrite = array(
+		'slug'                => 'salons',
+		'with_front'          => true,
+		'pages'               => true,
+		'feeds'               => true,
+	);
+
+	$args = array(
+		'label'               => __( 'salon_post', 'text_domain' ),
+		'description'         => __( 'TEDxABQ Salon posts', 'text_domain' ),
+		'labels'              => $labels,
+		'supports'            => array( 'title', 'editor', 'comments', 'thumbnail' ),
+		'taxonomies'          => array( 'category', 'post_tag' ),
+		'hierarchical'        => false,
+		'public'              => true,
+		'show_ui'             => true,
+		'show_in_menu'        => true,
+		'show_in_nav_menus'   => true,
+		'show_in_admin_bar'   => true,
+		'menu_position'       => 5,
+		'menu_icon'           => '',
+		'can_export'          => true,
+		'has_archive'         => true,
+		'exclude_from_search' => false,
+		'publicly_queryable'  => true,
+		'rewrite'             => $rewrite,
+		'capability_type'     => 'page',
+	);
+
+	register_post_type( 'salon_post', $args );
+}
+
+// Hook into the 'init' action
+add_action( 'init', 'salon_posts', 0 );
+
+
 function curated_videos() {
 	register_post_type( 'curated_video', array(
 	  'labels' => array(
